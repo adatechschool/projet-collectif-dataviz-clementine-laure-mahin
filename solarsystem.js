@@ -30,6 +30,7 @@ function fetchPlanetInfo(numero) {
 
 // Cette fonction permet de récupérer les données provenant de l'API 
 
+
 fetchPlanetInfo('21')
     .then(function(planet) {
         console.log(planet)
@@ -39,4 +40,9 @@ fetchPlanetInfo('21')
         document.getElementById('planet-population').textContent = planet.population;
     })
     .catch(function(error){console.error(error)})
+
+
+
+
+
 
