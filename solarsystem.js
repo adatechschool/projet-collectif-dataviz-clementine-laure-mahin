@@ -22,17 +22,27 @@
 function fetchPlanetInfo(numero) {
     console.log(numero)
     return fetch(`https://swapi.dev/api/planets/${numero}`)
-        .then(function (response){return response.json()})
-        .then(function (planet){
-            console.log(planet)
-            document.getElementById('planet-name').textContent = planet.name;
-            document.getElementById('planet-climate').textContent = planet.climate;
-            document.getElementById('planet-diameter').textContent = planet.diameter + " km";
-            document.getElementById('planet-population').textContent = planet.population;
-        })
-        .catch(function (error) { console.error(error) })
-};
+        .then(response => response.json())
+        .then(function(planet) {
+          console.log(planet);
+          document.getElementById('planet-name').textContent = planet.name;
+          document.getElementById('planet-climate').textContent = planet.climate;
+          document.getElementById('planet-diameter').textContent = planet.diameter + " km";
+          document.getElementById('planet-population').textContent = planet.population;
+    })
+    .catch(function(error) {console.error(error);
+    });
+ };
 
+
+document.getElementById("lang").addEventListener("change", function(event) {
+  event.preventDefault();
+  
+let planeteSelectionnee = document.getElementById("lang").value;
+
+fetchPlanetInfo(planeteSelectionnee)
+
+});
 
 
 
