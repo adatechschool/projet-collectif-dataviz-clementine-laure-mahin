@@ -1,0 +1,22 @@
+#planetlist {
+    position: absolute;
+    top: 50%; /* Place la div à mi-hauteur de l'écran (ajustez cette valeur selon vos besoins) */
+    right: 20px; /* Place la div tout à droite de l'écran */
+    transform: translateY(-50%); /* Centre la div verticalement */
+    background-color: #f5e8cb; /* Couleur de fond de la div (vous pouvez la changer selon vos préférences) */
+    padding: 10px; /* Ajoute un peu d'espace intérieur pour le contenu de la div */
+    border: 1px solid #f8f6ee; /* Ajoute une bordure pour séparer la div du reste du contenu */
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3); /* Ajoute une ombre pour donner un peu de profondeur */
+  }
+
+  #planet-info {
+    position: absolute;
+    top: 50%;
+    left: 40px; /* Place la div tout à droite de l'écran */
+    transform: translateY(-50%); /* Centre la div verticalement */
+    background-color: #eddaae; /* Couleur de fond de la div (vous pouvez la changer selon vos préférences) */
+    padding: 200px; /* Ajoute un peu d'espace intérieur pour le contenu de la div */
+    width: 300px; /* Définit une largeur de 300 pixels pour la boîte */
+    border: 2px solid #f3efe4; /* Ajoute une bordure pour séparer la div du reste du contenu */
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3); /* Ajoute une ombre pour donner un peu de profondeur */
+  }

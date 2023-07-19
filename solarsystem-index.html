@@ -3,6 +3,7 @@
 
 <head>
     <meta charset="UTF-8" />
+    <link rel="stylesheet" type="text/css" href="solarsystem.css">
     <title>Planètdex</title>
 </head>
 
@@ -64,9 +65,8 @@
               <option value="21">Eriadu  </option>
               <option value="13">Mustafar  </option>
             </select>
-            <input type="submit" value="Rechercher" />
-
       </form>
+      <button value="Rechercher" onclick="fetchPlanetInfo(document.getElementById('lang').value)">Rechercher</button>
     </div>
 </body>
 <script src="solarsystem.js"></script>
