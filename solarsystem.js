@@ -32,9 +32,13 @@ function fetchPlanetInfo(numero) {
 
       let selectedPlanet = planetlist.find(planet => planet.value === numero);
       if (selectedPlanet) {
+        document.getElementById('Numero').innerHTML = "N°" + selectedPlanet.numero;
         document.getElementById('planet-portrait').innerHTML = selectedPlanet.portrait;
-        document.getElementById('planet-portrait').innerHTML = selectedPlanet.portrait;
-        document.getElementById('planet-portrait').innerHTML = selectedPlanet.portrait;
+        document.getElementById('planet-type').innerHTML = selectedPlanet.type + " "
+        if(selectedPlanet.type2 !== undefined){
+          document.getElementById('planet-type2').innerHTML = selectedPlanet.type2
+        }
+        document.getElementById('planet-context').innerHTML = selectedPlanet.resume;
       }
     })
     .catch(function (error) {
