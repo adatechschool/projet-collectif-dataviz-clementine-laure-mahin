@@ -10,64 +10,35 @@
 <body>
 
     <div class="planetdex">
+
         <div class="titre">
             <!-- nom et type de planète -->
+            <p><span id="Numero">N°</span></p>
+            <p><span id="planet-name"></span></p>
+            <p><span id="planet-type"></span></p>
+            <p><span id="planet-type2"></span></p>
+
         </div>
+
         <div class="image">
-            <!-- image de planète -->
-          </div>
-        <div class="details">
-            <!--données de l'api-->
+            <p><span id="planet-portrait"></span></p>
+            <!-- Ici avec JS on intègre l'image de la planète  -->
         </div>
+
+        <div class="details">
+            <p><span id="planet-climate"></span><br><span id="planet-diameter"></span><br>Population totale : <span id="planet-population"></span></p>
+        </div>
+        
         <div class="resume">
-            <!--résumé de la planète-->
+            <p><span id="planet-context"></span></p>
         </div>
       </div>
   
     <!-- On divise notre page web en deux section : la première section permet d'afficher les données de la planète "séléctionnée" 
     La seconde division prend la forme d'une liste et permet de naviguer dans la liste des planètes-->
 
-    <!-- Première section : -->
-    <div id="planet-info">
-        <p><span id="Numero">N°</span></p>
-
-        <p><span id="planet-name">
-                <!-- Ici avec JS on intègre un texte  -->
-            </span></p>
-
-        <p><span id="planet-type">
-                <!-- ici on intègre plutôt un logo + le texte qui va avec -->
-            </span></p>
-
-            <p><span id="planet-portrait">
-                <!-- Ici avec JS on intègre l'image de la planète  -->
-            </span></p>
-
-        <p>
-            <!-- Ici on peut par exemple intégré un logo qui permettra de définir le climat -->
-            <span id="planet-climate"></span>
-        </p>
-
-        <p>
-            <!-- Ici on peut par exemple intégré un logo qui permettra de définir le diamètre -->
-            <span id="planet-diameter"></span>
-        </p>
-
-        <p>
-            Population totale : 
-            <!-- Ici on intègrera le nombre d'habitants -->
-            <span id="planet-population"></span>
-        </p>
-
-        <p>
-            <!-- Ici on contextualise la planète -->
-            <span id="planet-context"></span>
-        </p>
-
-    </div>
-
     <!-- Seconde section : -->
-
+<div class="planetlist">
     <div id="planetlist">
         <!-- Ici on intégrerait la liste des planètes dans laquelle on souhaitera naviguer. Cette partie sera donc rédigée avec JS. -->
 
@@ -89,6 +60,7 @@
 
         </form>
     </div>
+</div>  
 
 
 </body>
