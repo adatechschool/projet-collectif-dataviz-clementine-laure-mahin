@@ -29,10 +29,12 @@ function fetchPlanetInfo(numero) {
       document.getElementById('planet-climate').textContent = planet.climate;
       document.getElementById('planet-diameter').textContent = planet.diameter + " km";
       document.getElementById('planet-population').textContent = planet.population;
-      // document.getElementById('planet-portrait').innerHTML = planetlist[0].portrait;
-      const planeteSelectionnee = planetlist.find(planete => planete.value === numero);
-      if (planeteSelectionnee) {
-        document.getElementById('planet-portrait').innerHTML = planeteSelectionnee.portrait;
+
+      let selectedPlanet = planetlist.find(planet => planet.value === numero);
+      if (selectedPlanet) {
+        document.getElementById('planet-portrait').innerHTML = selectedPlanet.portrait;
+        document.getElementById('planet-portrait').innerHTML = selectedPlanet.portrait;
+        document.getElementById('planet-portrait').innerHTML = selectedPlanet.portrait;
       }
     })
     .catch(function (error) {
