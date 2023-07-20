@@ -20,27 +20,34 @@
 // Cette fonction permet de récupérer un objet grace à l'API
 
 function fetchPlanetInfo(numero) {
-    console.log(numero)
-    return fetch(`https://swapi.dev/api/planets/${numero}`)
-        .then(response => response.json())
-        .then(function(planet) {
-          console.log(planet);
-          document.getElementById('planet-name').textContent = planet.name;
-          document.getElementById('planet-climate').textContent = planet.climate;
-          document.getElementById('planet-diameter').textContent = planet.diameter + " km";
-          document.getElementById('planet-population').textContent = planet.population;
+  console.log(numero)
+  return fetch(`https://swapi.dev/api/planets/${numero}`)
+    .then(response => response.json())
+    .then(function (planet) {
+      console.log(planet);
+      document.getElementById('planet-name').textContent = planet.name;
+      document.getElementById('planet-climate').textContent = planet.climate;
+      document.getElementById('planet-diameter').textContent = planet.diameter + " km";
+      document.getElementById('planet-population').textContent = planet.population;
+      // document.getElementById('planet-portrait').innerHTML = planetlist[0].portrait;
+      const planeteSelectionnee = planetlist.find(planete => planete.value === numero);
+      if (planeteSelectionnee) {
+        document.getElementById('planet-portrait').innerHTML = planeteSelectionnee.portrait;
+      }
     })
-    .catch(function(error) {console.error(error);
+    .catch(function (error) {
+      console.error(error);
     });
- };
+};
 
 
-document.getElementById("lang").addEventListener("change", function(event) {
+
+document.getElementById("lang").addEventListener("change", function (event) {
   event.preventDefault();
-  
-let planeteSelectionnee = document.getElementById("lang").value;
 
-fetchPlanetInfo(planeteSelectionnee)
+  let planeteSelectionnee = document.getElementById("lang").value;
+
+  fetchPlanetInfo(planeteSelectionnee)
 
 });
 
