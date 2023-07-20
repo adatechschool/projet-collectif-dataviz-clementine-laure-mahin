@@ -27,8 +27,8 @@ function fetchPlanetInfo(numero) {
       console.log(planet);
       document.getElementById('planet-name').textContent = planet.name;
       document.getElementById('planet-climate').textContent = planet.climate;
-      document.getElementById('planet-diameter').textContent = planet.diameter + " km";
-      document.getElementById('planet-population').textContent = planet.population;
+      document.getElementById('planet-diameter').textContent = spaceInt(planet.diameter )+ " km";
+      document.getElementById('planet-population').textContent = spaceInt(planet.population);
 
       let selectedPlanet = planetlist.find(planet => planet.value === numero);
       if (selectedPlanet) {
@@ -59,8 +59,6 @@ document.getElementById("lang").addEventListener("change", function (event) {
 
 });
 
-
-
-
-
-
+function spaceInt(number){
+return new Intl.NumberFormat().format(number)
+}
