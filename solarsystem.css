@@ -30,6 +30,12 @@
   align-items: center;
 }
 
+.image img {
+  width: 60%; /* Remplir toute la largeur de la div */
+  height: 60%; /* Remplir toute la hauteur de la div */
+  object-fit: cover; /* Conserver les proportions et remplir la div */
+}
+
 .details{
   width: 40%;
   height: 30%;

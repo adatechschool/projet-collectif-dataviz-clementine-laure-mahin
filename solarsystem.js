@@ -34,9 +34,11 @@ function fetchPlanetInfo(numero) {
       if (selectedPlanet) {
         document.getElementById('Numero').innerHTML = "N°" + selectedPlanet.numero;
         document.getElementById('planet-portrait').innerHTML = selectedPlanet.portrait;
-        document.getElementById('planet-type').innerHTML = selectedPlanet.type + " "
+        document.getElementById('planet-type').innerHTML = selectedPlanet.type
         if(selectedPlanet.type2 !== undefined){
           document.getElementById('planet-type2').innerHTML = selectedPlanet.type2
+        }else{
+          document.getElementById('planet-type2').innerHTML = ""
         }
         document.getElementById('planet-context').innerHTML = selectedPlanet.resume;
       }
