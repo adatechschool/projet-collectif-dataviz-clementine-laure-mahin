@@ -1,22 +1,92 @@
-#planetlist {
-    position: absolute;
-    top: 50%; /* Place la div à mi-hauteur de l'écran (ajustez cette valeur selon vos besoins) */
-    right: 20px; /* Place la div tout à droite de l'écran */
-    transform: translateY(-50%); /* Centre la div verticalement */
-    background-color: #f5e8cb; /* Couleur de fond de la div (vous pouvez la changer selon vos préférences) */
-    padding: 10px; /* Ajoute un peu d'espace intérieur pour le contenu de la div */
-    border: 1px solid #f8f6ee; /* Ajoute une bordure pour séparer la div du reste du contenu */
-    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3); /* Ajoute une ombre pour donner un peu de profondeur */
-  }
+.planetdex {
+  width: 1500px;
+  height: 800px;
+  background-color: #e91f1f;
+  border: 2px solid #555;
+  border-radius: 10px;
+  padding: 20px;
+}
 
-  #planet-info {
-    position: absolute;
-    top: 50%;
-    left: 40px; /* Place la div tout à droite de l'écran */
-    transform: translateY(-50%); /* Centre la div verticalement */
-    background-color: #eddaae; /* Couleur de fond de la div (vous pouvez la changer selon vos préférences) */
-    padding: 200px; /* Ajoute un peu d'espace intérieur pour le contenu de la div */
-    width: 300px; /* Définit une largeur de 300 pixels pour la boîte */
-    border: 2px solid #f3efe4; /* Ajoute une bordure pour séparer la div du reste du contenu */
-    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3); /* Ajoute une ombre pour donner un peu de profondeur */
-  }
+.screen {
+  background-color: #f8ec90;
+  width: 1000px;
+  height: 800px;
+  margin-bottom: 10px;
+  text-align: center;
+  font-size: 18px;
+  font-weight: bold;
+  line-height: 200px;
+}
+
+.buttons {
+  display: flex;
+  justify-content: center;
+}
+
+.buttons button {
+  background-color: #ff0000;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  margin: 0 5px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.buttons button:hover {
+  background-color: #cc0000;
+}
+
+/* Style de l'écran */
+.screen {
+  position: relative;
+  overflow: hidden;
+}
+
+.screen::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url('path/vers/une/image.png');
+  background-size: cover;
+  background-position: center;
+  filter: brightness(0.5);
+  z-index: -1;
+}
+
+.screen::after {
+  content: "No. 001";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 24px;
+  color: #fff;
+  text-shadow: 2px 2px 4px #000;
+}
+
+/* Style des boutons */
+.buttons button {
+  background-color: #ff0000;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  margin: 0 5px;
+  font-size: 16px;
+  cursor: pointer;
+  text-transform: uppercase;
+}
+
+.buttons button:hover {
+  background-color: #cc0000;
+}
+
+.buttons button.disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
