@@ -1,92 +1,57 @@
 .planetdex {
-  width: 1500px;
-  height: 800px;
-  background-color: #e91f1f;
+  width: 940px;
+  height: 549px;
+  background-color: #f7f9e7;
+  border: 2px solid #555;
+  border-radius: 10px;
+  padding: 20px; 
+}
+
+.titre {
+  width:900px;
+  height:50px;
+  background-color: darkblue;
   border: 2px solid #555;
   border-radius: 10px;
   padding: 20px;
-}
-
-.screen {
-  background-color: #f8ec90;
-  width: 1000px;
-  height: 800px;
-  margin-bottom: 10px;
-  text-align: center;
-  font-size: 18px;
-  font-weight: bold;
-  line-height: 200px;
-}
-
-.buttons {
   display: flex;
-  justify-content: center;
+  align-items:flex-start;
 }
 
-.buttons button {
-  background-color: #ff0000;
-  color: #fff;
-  border: none;
-  border-radius: 5px;
-  padding: 10px 20px;
-  margin: 0 5px;
-  font-size: 16px;
-  cursor: pointer;
+.image {
+  width: 400px;
+  height: 200px;
+  background-color: #f7f9e7;
+  border-radius: 10px;
+  padding: 20px; 
+  margin: 5px;
+  margin-bottom: 50px;
+  display: flex;
+  align-items: center;
 }
 
-.buttons button:hover {
-  background-color: #cc0000;
+.details{
+  width: 40%;
+  height: 30%;
+  background-color: #f7f9e7;
+  border: 2px solid #f7f9e7;;
+  border-radius: 10px;
+  margin: 5px;
+  margin-top: -280px;
+  float: right;
+  padding: 20px;
+  display: flex;
+  align-items: center;
 }
 
-/* Style de l'écran */
-.screen {
-  position: relative;
-  overflow: hidden;
-}
-
-.screen::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-image: url('path/vers/une/image.png');
-  background-size: cover;
-  background-position: center;
-  filter: brightness(0.5);
-  z-index: -1;
-}
-
-.screen::after {
-  content: "No. 001";
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  font-size: 24px;
-  color: #fff;
-  text-shadow: 2px 2px 4px #000;
-}
-
-/* Style des boutons */
-.buttons button {
-  background-color: #ff0000;
-  color: #fff;
-  border: none;
-  border-radius: 5px;
-  padding: 10px 20px;
-  margin: 0 5px;
-  font-size: 16px;
-  cursor: pointer;
-  text-transform: uppercase;
-}
-
-.buttons button:hover {
-  background-color: #cc0000;
-}
-
-.buttons button.disabled {
-  background-color: #ccc;
-  cursor: not-allowed;
+.resume {
+  width: 900px;
+  height: 50px;
+  background-color: #ebf3b0;
+  border: 2px solid #040404;
+  border-radius: 10px;
+  padding: 20px;
+  margin-top: 120px;
+  display: flex;
+  align-items:flex-end;
 }
