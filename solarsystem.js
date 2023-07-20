@@ -44,6 +44,8 @@ fetchPlanetInfo(planeteSelectionnee)
 
 });
 
+document.getElementById
+
 
 
 
