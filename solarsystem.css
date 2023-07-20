@@ -10,7 +10,7 @@
 .titre {
   width:900px;
   height:50px;
-  background-color: darkblue;
+  background-color: rgb(136, 180, 238);
   border: 2px solid #555;
   border-radius: 10px;
   padding: 20px;
@@ -54,4 +54,17 @@
   margin-top: 120px;
   display: flex;
   align-items:flex-end;
+}
+
+.planetlist{
+  width: 600px;
+  height: 450px;
+  background-color: #11d760;
+  border: 2px solid #040404;
+  border-radius: 10px;
+  padding: 20px;
+  margin-top: -590px;
+  float : right;
+  display:flex;
+  align-items:flex-start;
 }
