@@ -2,12 +2,12 @@ body {
   display: flex;
   justify-content: space-between;
   gap: 20px;
-  padding:5vw;
+  padding: 5vw;
   align-items: center;
   height: 30em;
   width: 90vw;
   background-image: url("Banque images/Back-ground\ Body.jpeg");
-  background-size:100%;
+  background-size: 100%;
 }
 
 .planetdex {
@@ -19,14 +19,15 @@ body {
   padding: 20px;
   display: flex;
   flex-direction: column;
-  gap:20px;
+  gap: 20px;
 }
 
 .titre {
-  width:100%;
-  height:10%;
+  width: 100%;
+  height: 10%;
   background-color: rgb(8, 38, 78);
   border-radius: 3px;
+  padding: 5px;
   display: flex;
   justify-content: space-between;
   line-height: 20px;
@@ -34,44 +35,64 @@ body {
 
 .partie-gauche {
   display: flex;
-  justify-content:flex-end;
+  justify-content: flex-end;
   gap: 20px;
   padding: 10px;
 }
 
 #Numero {
-  font : Arial, Helvetica, sans-serif; 
+  font-family: Trebuchet MS, sans-serif;
   font-size: 12px;
-  color: rgb(246, 234, 211)}
+  color: rgb(246, 234, 211)
+}
 
 #planet-name {
-  font : Arial, Helvetica, sans-serif; 
+  font-family: Trebuchet MS, sans-serif;
   font-size: 14px;
   color: rgb(246, 234, 211)
 }
 
 .partie-droite {
   display: flex;
-  justify-content:flex-start;
+  justify-content: flex-start;
   gap: 20px;
   padding: 10px;
+  background-color: rgb(2, 2, 82);
 }
 
 #planet-type {
-  font : Arial, Helvetica, sans-serif; 
+  font-family: Trebuchet MS, sans-serif;
   font-size: 10px;
-  color: rgb(246, 234, 211)
+  color: rgb(246, 234, 211);
+  display: flex;
+  align-items: center;
+}
+
+#type {
+  width: 2em;
+  height: auto;
+  display: flex;
+  align-items: center;
 }
 
 #planet-type2 {
-  font : Arial, Helvetica, sans-serif; 
+  font-family: Trebuchet MS, sans-serif;
   font-size: 10px;
-  color: rgb(246, 234, 211)
+  color: rgb(246, 234, 211);
+  display: flex;
+  align-items: center;
 }
 
-.corpus{
+#type2 {
+  width: 2em;
+  height: auto;
+  display: flex;
+  align-items: center;
+}
+
+.corpus {
   width: 100%;
-  height: 100%;
+  height: 80%;
   /* gap:20px; */
   display: flex;
   justify-content: space-around;
@@ -101,22 +122,50 @@ body {
 }
 
 .image img {
-  width: auto; /* Remplir toute la largeur de la div */
-  height: 60%; /* Remplir toute la hauteur de la div */
-  object-fit: cover; /* Conserver les proportions et remplir la div */
+  width: auto;
+  /* Remplir toute la largeur de la div */
+  height: 100%;
+  /* Remplir toute la hauteur de la div */
+  object-fit: cover;
+  /* Conserver les proportions et remplir la div */
   display: flex;
   justify-content: center;
 }
 
-.details{
+.details {
   width: auto;
   height: 60%;
   background-color: #f7f9e7;
   border-radius: 10px;
   float: right;
   display: flex;
-  align-items:flex-start;
-  justify-content: center;
+  align-items: flex-start;
+  /* justify-content: flex-start; */
+  flex-direction: column;
+  gap: 20px;
+  font-family: Trebuchet MS, sans-serif;
+  font-size: 1.5vw;
+  color: rgb(35, 35, 88)
+}
+
+.climat {
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
+}
+
+.diametre {
+  gap: 5em;
+}
+
+#logo-diametre {
+  width: auto;
+  height: 1em;
+}
+
+.population {
+  display: flex;
+  justify-content: space-around;
   flex-direction: column;
 }
 
@@ -126,28 +175,28 @@ body {
   background-color: #ebf3b0;
   border: 2px solid #040404;
   display: flex;
-  align-items:flex-start;
+  align-items: flex-start;
   justify-content: flex-start;
 }
 
-#planetlist{
+#planetlist {
   width: 20%;
   height: 80%;
   background-color: #3338389d;
   border-radius: 10px;
-  float : right;
-  display:flex;
-  align-items:flex-start;
+  float: right;
+  display: flex;
+  align-items: flex-start;
   gap: 20px;
 }
 
-#intro-select{
-  display:flex;
-  justify-content:flex-end;
+#intro-select {
+  display: flex;
+  justify-content: flex-end;
 }
 
-#lang{
-  display:flex;
+#lang {
+  display: flex;
   justify-content: center;
   align-content: center;
 }
