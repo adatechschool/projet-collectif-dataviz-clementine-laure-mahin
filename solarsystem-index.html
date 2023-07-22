@@ -13,54 +13,64 @@
 
         <div class="titre">
             <!-- nom et type de planète -->
-            <p><span id="Numero">N°</span></p>
-            <p><span id="planet-name"></span></p>
-            <p><span id="planet-type"></span></p>
-            <p><span id="planet-type2"></span></p>
+            <div class="partie-gauche">
+                <span id="Numero">N°</span>
+                <span id="planet-name"></span>
+            </div>
 
+            <div class="partie-droite">
+                <span id="planet-type"></span>
+                <span id="planet-type2"></span>
+            </div>
         </div>
 
-        <div class="image">
-            <p><span id="planet-portrait"></span></p>
-            <!-- Ici avec JS on intègre l'image de la planète  -->
+        <div class="corpus">
+            <div class="image">
+                <span id="planet-portrait"></span>
+                <!-- Ici avec JS on intègre l'image de la planète  -->
+            </div>
+
+            <div class="details">
+                <span id="planet-climate"></span><br>
+                <span id="planet-diameter"></span><br>
+                <span id="planet-population"></span>
+            </div>
         </div>
 
-        <div class="details">
-            <p><span id="planet-climate"></span><br><span id="planet-diameter"></span><br>Population totale : <span id="planet-population"></span></p>
-        </div>
-        
         <div class="resume">
-            <p><span id="planet-context"></span></p>
+            <span id="planet-context"></span>
         </div>
-      </div>
-  
+    </div>
+
     <!-- On divise notre page web en deux section : la première section permet d'afficher les données de la planète "séléctionnée" 
     La seconde division prend la forme d'une liste et permet de naviguer dans la liste des planètes-->
 
     <!-- Seconde section : -->
-<div class="planetlist">
     <div id="planetlist">
         <!-- Ici on intégrerait la liste des planètes dans laquelle on souhaitera naviguer. Cette partie sera donc rédigée avec JS. -->
 
         <form action="#">
-            <label for="lang">Dernières planètes découvertes</label>
+            <label for="lang" id="intro-select">Dernières planètes découvertes
+            </label>
+
+            <br>
             <select name="planetMenu" id="lang" size="5">
-              <option value="1">Tatooine </option>
-              <option value="2">Alderaan </option>
-              <option value="4">Hoth </option>
-              <option value="6">Bespin </option>
-              <option value="8">Naboo </option>
-              <option value="9">Coruscant </option>
-              <option value="10">Kamino </option>
-              <option value="11">Geonosis </option>
-              <option value="21">Eriadu  </option>
-              <option value="13">Mustafar  </option>
+                <option value="1">Tatooine </option>
+                <option value="2">Alderaan </option>
+                <option value="4">Hoth </option>
+                <option value="6">Bespin </option>
+                <option value="8">Naboo </option>
+                <option value="9">Coruscant </option>
+                <option value="10">Kamino </option>
+                <option value="11">Geonosis </option>
+                <option value="21">Eriadu </option>
+                <option value="13">Mustafar </option>
             </select>
-            
+
 
         </form>
     </div>
-    
+
 
 </body>
 <script src="solarsystem-annexe.js"></script>
