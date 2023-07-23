@@ -23,47 +23,57 @@
         </div>
 
         <div class="titre">
-            <!-- nom et type de planète -->
             <div class="partie-gauche">
-                <span id="Numero">N°</span>
+                <div class="losange-container">
+                    <img class="losange" src="Banque images/Elements de décors/Losange.png" />
+                    <span id="Numero">N° ???</span>
+                </div>
                 <span id="planet-name"></span>
             </div>
 
             <div class="partie-droite">
-                <span id="planet-type"></span>
+                <span id="logo-type"><img id="type" src="Banque images/Logo éléments/Inconnu.png" /></span>
+                <span id="planet-type"> ??? </span>
+                <span id="logo-type2"></span>
                 <span id="planet-type2"></span>
             </div>
         </div>
 
+
+
         <div class="corpus">
             <div class="image">
                 <span id="planet-portrait">
-                    <img alt="Visuel de la planète" title="Visuel de la planète" src="Banque images/Portraits planètes/unknown.png">
+                    <img alt="Visuel de la planète" title="Visuel de la planète"
+                        src="Banque images/Portraits planètes/unknown.png">
                 </span>
-                <!-- Ici avec JS on intègre l'image de la planète  -->
             </div>
 
             <div class="details">
-                <div class="climat">
-                    <span id="data-climat">Climat : </span>
-                    <span id="planet-climate"> ??? </span><br>
-                </div>
-
                 <div class="diametre">
                     <span id="data-diametre">
-                        <img id="logo-diametre" alt="Diamètre" title="Diamètre" src="Banque images/Icones planètes/diamètre.png"/>
+                        <img id="logo-diametre" alt="Diamètre" title="Diamètre"
+                            src="Banque images/Elements de décors/diamètre.png"/>
                     </span>
                     <span id="planet-diameter"> ??? </span><br>
                 </div>
 
-                <div class="population">
-                    <span id="data-population">Population totale : </span>
-                    <span id="planet-population"> ??? </span>
+                <div class="climat-container">
+                    <img class="climat" src="Banque images/Elements de décors/Coup de peinture.png" />
+                    <span id="data-climat">Climat : </span>
                 </div>
+                <span id="planet-climate"> ??? </span><br>
+
+                <div class="population-container">
+                    <img class="population" src="Banque images/Elements de décors/Coup de peinture.png" />
+                    <span id="data-population">Population totale : </span>
+                </div>
+                <span id="planet-population"> ??? </span>
             </div>
         </div>
 
-        <div class="resume">
+        <div class="resume-container">
+            <img class="resume" src="Banque images/Elements de décors/resume.png" />
             <span id="planet-context"></span>
         </div>
     </div>
@@ -75,26 +85,26 @@
     <div id="planetlist">
         <!-- Ici on intégrerait la liste des planètes dans laquelle on souhaitera naviguer. Cette partie sera donc rédigée avec JS. -->
 
-        <form action="#">
-            <label for="lang" id="intro-select">Dernières planètes découvertes
-            </label>
+        <!-- <form action="#"> -->
+        <label for="lang" id="intro-select">Dernières planètes découvertes :
+        </label>
 
-            <br>
-            <select name="planetMenu" id="lang" size="5">
-                <option value="1">Tatooine </option>
-                <option value="2">Alderaan </option>
-                <option value="4">Hoth </option>
-                <option value="6">Bespin </option>
-                <option value="8">Naboo </option>
-                <option value="9">Coruscant </option>
-                <option value="10">Kamino </option>
-                <option value="11">Geonosis </option>
-                <option value="21">Eriadu </option>
-                <option value="13">Mustafar </option>
-            </select>
+        <br>
+        <select name="planetMenu" id="lang" size="5">
+            <option value="1">Tatooine </option>
+            <option value="2">Alderaan </option>
+            <option value="4">Hoth </option>
+            <option value="6">Bespin </option>
+            <option value="8">Naboo </option>
+            <option value="9">Coruscant </option>
+            <option value="10">Kamino </option>
+            <option value="11">Geonosis </option>
+            <option value="21">Eriadu </option>
+            <option value="13">Mustafar </option>
+        </select>
 
 
-        </form>
+        <!-- </form> -->
     </div>
 
 
@@ -104,16 +114,7 @@
 
 
 
-<!-- 
-<img src="Banque images/Logo éléments/Air.png"/>
-<img src="Banque images/Logo éléments/Eau.png"/>
-<img src="Banque images/Logo éléments/Feu.png"/>
-<img src="Banque images/Logo éléments/Glace.png"/>
-<img src="Banque images/Logo éléments/Métal.png"/>
-<img src="Banque images/Logo éléments/Plante.png"/>
-<img src="Banque images/Logo éléments/Sable.png"/>
-<img src="Banque images/Logo éléments/Terre.png"/>
-<img src="Banque images/Logo éléments/Ténèbre.png"> -->
+
 
 
 
