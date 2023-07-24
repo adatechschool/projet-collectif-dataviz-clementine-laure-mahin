@@ -265,7 +265,67 @@ select {
   color: rgb(246, 234, 211);
   text-align: end;
 }
-/* 
-select#lang option[value="1"] { background-image:url("Banque\ images/Portraits planètes/Tatooine.png");   }
-select#lang option[value="2"] { background-image:url(female.png); }
-select#lang option[value="3"] { background-image:url(others.png); } */
+
+select#lang option[value="1"] { 
+  background-image:url("Banque\ images/Portraits planètes/Tatooine.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+select#lang option[value="2"] { 
+  background-image:url("Banque\ images/Portraits\ planètes/Alderaan.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+ }
+select#lang option[value="4"] { 
+  background-image:url("Banque\ images/Portraits\ planètes/Hoth.png"); 
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+select#lang option[value="6"] { 
+  background-image:url("Banque\ images/Portraits\ planètes/Bespin.png"); 
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+select#lang option[value="60"] { 
+  background-image:url("Banque\ images/Portraits\ planètes/unknown.png"); 
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+select#lang option[value="8"] { 
+  background-image:url("Banque\ images/Portraits\ planètes/Naboo.png"); 
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+select#lang option[value="9"] { 
+  background-image:url("Banque\ images/Portraits\ planètes/Coruscant.png"); 
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+select#lang option[value="10"] { 
+  background-image:url("Banque\ images/Portraits\ planètes/Kamino.png"); 
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+select#lang option[value="11"] { 
+  background-image:url("Banque\ images/Portraits\ planètes/Geonosis.png"); 
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+select#lang option[value="13"] { 
+  background-image:url("Banque\ images/Portraits\ planètes/Mustafar.png"); 
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+select#lang option[value="21"] { 
+  background-image:url("Banque\ images/Portraits\ planètes/Eriadu.png"); 
+  background-size: contain;
+  background-repeat: no-repeat;
+}
