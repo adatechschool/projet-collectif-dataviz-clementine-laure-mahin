@@ -46,8 +46,6 @@ function fetchPlanetInfo(numero) {
     });
 };
 
-
-
 document.getElementById("lang").addEventListener("change", function (event) {
   event.preventDefault();
 
