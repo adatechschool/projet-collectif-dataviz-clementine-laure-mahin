@@ -9,65 +9,108 @@
 
 <body>
 
+    <div class="accueil">
+        <div class>
+            <span id="onglet-planetdex"></span>
+        </div>
+    </div>
+
+
+
     <div class="planetdex">
+        <div class>
+            <span id="onglet-planetdex"></span>
+        </div>
 
         <div class="titre">
-            <!-- nom et type de planète -->
-            <p><span id="Numero">N°</span></p>
-            <p><span id="planet-name"></span></p>
-            <p><span id="planet-type"></span></p>
-            <p><span id="planet-type2"></span></p>
+            <div class="partie-gauche">
+                <div class="losange-container">
+                    <img class="losange" src="Banque images/Elements de décors/Losange.png" />
+                    <span id="Numero">N° ???</span>
+                </div>
+                <span id="planet-name"></span>
+            </div>
 
+            <div class="partie-droite">
+                <span id="logo-type"><img id="type" src="Banque images/Logo éléments/Inconnu.png" /></span>
+                <span id="planet-type"> ??? </span>
+                <span id="logo-type2"></span>
+                <span id="planet-type2"></span>
+            </div>
         </div>
 
-        <div class="image">
-            <p><span id="planet-portrait"></span></p>
-            <!-- Ici avec JS on intègre l'image de la planète  -->
+
+
+        <div class="corpus">
+            <div class="image">
+                <span id="planet-portrait">
+                    <img alt="Visuel de la planète" title="Visuel de la planète"
+                        src="Banque images/Portraits planètes/unknown.png">
+                </span>
+            </div>
+
+            <div class="details">
+                <div class="diametre">
+                    <span id="data-diametre">
+                        <img id="logo-diametre" alt="Diamètre" title="Diamètre"
+                            src="Banque images/Elements de décors/diamètre.png"/>
+                    </span>
+                    <span id="planet-diameter"> ??? </span><br>
+                </div>
+
+                <div class="climat-container">
+                    <img class="climat" src="Banque images/Elements de décors/Coup de peinture.png" />
+                    <span id="data-climat">Climat : </span>
+                </div>
+                <span id="planet-climate"> ??? </span><br>
+
+                <div class="population-container">
+                    <img class="population" src="Banque images/Elements de décors/Coup de peinture.png" />
+                    <span id="data-population">Population totale : </span>
+                </div>
+                <span id="planet-population"> ??? </span>
+            </div>
         </div>
 
-        <div class="details">
-            <p><span id="planet-climate"></span><br><span id="planet-diameter"></span><br>Population totale : <span id="planet-population"></span></p>
+        <div class="resume-container">
+            <img class="resume" src="Banque images/Elements de décors/resume.png" />
+            <span id="planet-context"></span>
         </div>
-        
-        <div class="resume">
-            <p><span id="planet-context"></span></p>
-        </div>
-      </div>
-  
+    </div>
+
     <!-- On divise notre page web en deux section : la première section permet d'afficher les données de la planète "séléctionnée" 
     La seconde division prend la forme d'une liste et permet de naviguer dans la liste des planètes-->
 
     <!-- Seconde section : -->
-<div class="planetlist">
     <div id="planetlist">
         <!-- Ici on intégrerait la liste des planètes dans laquelle on souhaitera naviguer. Cette partie sera donc rédigée avec JS. -->
 
-        <form action="#">
-            <label for="lang">Dernières planètes découvertes</label>
-            <select name="planetMenu" id="lang" size="5">
-              <option value="1">Tatooine </option>
-              <option value="2">Alderaan </option>
-              <option value="4">Hoth </option>
-              <option value="6">Bespin </option>
-              <option value="8">Naboo </option>
-              <option value="9">Coruscant </option>
-              <option value="10">Kamino </option>
-              <option value="11">Geonosis </option>
-              <option value="21">Eriadu  </option>
-              <option value="13">Mustafar  </option>
-            </select>
-            
+        <!-- <form action="#"> -->
+        <label for="lang" id="intro-select">Dernières planètes découvertes :
+        </label>
 
-        </form>
+        <br>
+        <select name="planetMenu" id="lang" size="5">
+            <option value="1">Tatooine </option>
+            <option value="2">Alderaan </option>
+            <option value="4">Hoth </option>
+            <option value="6">Bespin </option>
+            <option value="8">Naboo </option>
+            <option value="9">Coruscant </option>
+            <option value="10">Kamino </option>
+            <option value="11">Geonosis </option>
+            <option value="21">Eriadu </option>
+            <option value="13">Mustafar </option>
+        </select>
+
+
+        <!-- </form> -->
     </div>
-    
+
 
 </body>
 <script src="solarsystem-annexe.js"></script>
 <script src="solarsystem.js"></script>
-
-
-
 
 
 
