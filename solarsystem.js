@@ -25,7 +25,6 @@ function fetchPlanetInfo(numero) {
     .then(response => response.json())
     .then(function (planet) {
       console.log(planet);
-      document.getElementById('planet-name').textContent = planet.name;
       document.getElementById('planet-climate').textContent = planet.climate ;
       document.getElementById('planet-diameter').textContent = spaceInt(planet.diameter )+ " km";
       document.getElementById('planet-population').textContent = spaceInt(planet.population);
@@ -33,6 +32,7 @@ function fetchPlanetInfo(numero) {
       let selectedPlanet = planetlist.find(planet => planet.value === numero);
       if (selectedPlanet) {
         document.getElementById('Numero').innerHTML = "N°" + selectedPlanet.numero;
+        document.getElementById('planet-name').innerHTML = selectedPlanet.nom;
         document.getElementById('planet-portrait').innerHTML = selectedPlanet.portrait;
         document.getElementById('planet-type').innerHTML = selectedPlanet.type
         document.getElementById('logo-type').innerHTML = selectedPlanet.logotype
