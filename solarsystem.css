@@ -287,10 +287,6 @@ select {
   }
 }
 
-/* .planet-img-container {
-  animation: jelly 5s infinite;
-} */
-
 select#lang option[value="1"] { 
   background-image:url("Banque\ images/Portraits planètes/Tatooine.png");
   background-size: contain;
@@ -360,7 +356,8 @@ select#lang option[value="21"] {
 .loaderbb8 
   {
     display : none;
-    background: url('Banque images/Elements de décors/bb8.gif') 50% 50% no-repeat rgba(255, 255, 255, 0.8);
+    background: url('Banque images/Elements de décors/bb8.gif') 38% 50% no-repeat rgba(91, 90, 90, 0.338);
+    background-size : 200px;
     cursor: wait;
     height: 100%;
     left: 0;
@@ -369,45 +366,3 @@ select#lang option[value="21"] {
     width: 100%;
     z-index: 9999;
   }
-
-  /* .loaderbb8 h1 {
-		background: none;
-		border: none;
-		color: #458976;
-		font-size: 22px;
-		font-family: "Open Sans",sans-serif;
-		font-variant: small-caps;
-		font-weight: 700;
-		height: 700px;
-		line-height: 700px;
-		margin: 0 0 10px;
-		padding: 0;
-		text-align: center;
-    display : flex;
-    flex-direction: column;
-	} */
-
-  /* .loaderbb8 {
-    position: relative;
-    width: 100px;
-    height: 100px;
-  } */
-
-  /* .loader-gif {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-  }
-
-  .fade-out {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(243, 234, 234, 0.741);
-    /* opacity: 0;
-    transition: opacity 0.5s ease-out;
-  } */
