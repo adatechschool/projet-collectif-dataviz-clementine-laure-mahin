@@ -1,15 +1,19 @@
-body {
+.ancien-body {
   display: flex;
   justify-content: space-between;
   gap: 20px;
   padding: 5vw;
   align-items: center;
+}
+
+body{
+  display: flex;
+  flex-direction:column;
   height: auto;
   width: auto;
   background-image: url("Banque images/Elements\ de\ décors/Back-ground Body.jpeg");
   background-size: 100%;
   background-repeat: no-repeat;
-  font-family: Trebuchet MS, sans-serif;
 }
 
 #onglet-planetdex{
@@ -17,6 +21,10 @@ body {
   position: absolute;
 }
 
+.accueil {
+  margin: 5vw 0vw -3.5vw 5vw;
+  font-family: Trebuchet MS, sans-serif;
+}
 .planetdex {
   width: 70%;
   height: 100%;
