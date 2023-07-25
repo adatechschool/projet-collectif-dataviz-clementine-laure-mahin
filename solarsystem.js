@@ -75,10 +75,13 @@ function fetchPlanetInfo(numero) {
 };
 
 function showLoader(){
-  console.log("loaderbb8")
+  const loaderbb8=document.getElementById("loaderbb8")
+  loaderbb8.style.display="block";
 }
+
 function hideLoader(){
-  console.log("hiddenloaderbb8")
+  const loaderbb8=document.getElementById("loaderbb8")
+  loaderbb8.style.display="none";
 }
 
 document.getElementById("lang").addEventListener("change", function (event) {

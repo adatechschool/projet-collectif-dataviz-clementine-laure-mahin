@@ -360,7 +360,9 @@ select#lang option[value="21"] {
 .loaderbb8 
   {
     display : none;
-    background: url('Banque images/Elements de décors/bb8.gif') 50% 50% no-repeat rgba(255, 255, 255, 0.8);
+    background: url('Banque images/Elements de décors/bb8.gif') 50% 50% no-repeat rgba(56, 54, 54, 0.354);
+    background-size: 20vw;
+    background-repeat: no-repeat;
     cursor: wait;
     height: 100%;
     left: 0;
