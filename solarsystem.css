@@ -12,6 +12,11 @@ body {
   font-family: Trebuchet MS, sans-serif;
 }
 
+#onglet-planetdex{
+  background-color: #f0ebcd96;
+  position: absolute;
+}
+
 .planetdex {
   width: 70%;
   height: 100%;
