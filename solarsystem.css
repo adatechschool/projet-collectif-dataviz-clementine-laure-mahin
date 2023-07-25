@@ -9,8 +9,8 @@
 body{
   display: flex;
   flex-direction:column;
-  height: auto;
-  width: auto;
+  /* height: auto;
+  width: auto; */
   background-image: url("Banque images/Elements\ de\ décors/Back-ground Body.jpeg");
   background-size: 100%;
   background-repeat: no-repeat;
