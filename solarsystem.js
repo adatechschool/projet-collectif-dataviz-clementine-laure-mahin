@@ -21,6 +21,7 @@
 
 function fetchPlanetInfo(numero) {
   console.log(numero)
+  showLoader()
   return fetch(`https://swapi.dev/api/planets/${numero}`)
     .then(response => response.json())
     .then(function (planet) {
@@ -66,11 +67,19 @@ function fetchPlanetInfo(numero) {
         }
         document.getElementById('planet-context').innerHTML = selectedPlanet.resume;
       }
+      hideLoader()
     })
     .catch(function (error) {
       console.error(error);
     });
 };
+
+function showLoader(){
+  console.log("loaderbb8")
+}
+function hideLoader(){
+  console.log("hiddenloaderbb8")
+}
 
 document.getElementById("lang").addEventListener("change", function (event) {
   event.preventDefault();
@@ -84,3 +93,13 @@ document.getElementById("lang").addEventListener("change", function (event) {
 function spaceInt(number){
 return new Intl.NumberFormat().format(number)
 }
+
+// jQuery(window).load(function(){ jQuery(".loader").fadeOut("200"); });
+
+// window.addEventListener("load", function() {
+//   // Sélectionnez l'élément avec la classe "fade-out"
+//   const fadeOutElement = document.querySelector(".fade-out");
+  
+//   // Ajoutez la classe "fade-out-active" pour déclencher l'effet de fondu une fois que le contenu est chargé
+//   fadeOutElement.classList.add("fade-out-active");
+// });
