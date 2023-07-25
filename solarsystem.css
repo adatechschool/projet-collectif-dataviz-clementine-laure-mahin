@@ -5,7 +5,7 @@ body {
   padding: 5vw;
   align-items: center;
   height: auto;
-  width: 90vw;
+  width: auto;
   background-image: url("Banque images/Elements\ de\ décors/Back-ground Body.jpeg");
   background-size: 100%;
   background-repeat: no-repeat;
@@ -213,7 +213,7 @@ body {
 
 .resume {
   width: 63vw;
-  height: 4.2rem;
+  height: 5vw;
   background-color: #1515359d;
   border-radius: 10px;
   position: relative;
@@ -224,9 +224,10 @@ body {
   font-size: 1.2vw;
   color: rgb(246, 234, 211);
   position: absolute;
-  left: 10px;
+  padding : 4px 10px 15px 10px;
+  /* left: 10px;
   right:10px;
-  top: 10px;
+  top: 10px; */
   text-align: justify;
 }
 
@@ -254,6 +255,7 @@ select option:checked {
   background-color: rgba(40, 40, 40, 0.3);
   font-size: 2.6vw;
   border-radius: 30px;
+  animation: jelly 5s infinite;
 }
 
 select {
@@ -267,10 +269,29 @@ select {
   text-align: end;
 }
 
+@keyframes jelly {
+  0% {transform: scale(1, 1);
+  }
+  25% {transform: scale(0.9, 1.1);
+  }
+  50% {transform: scale(1.1, 0.9);
+  }
+  75% {transform: scale(0.95, 1.05);
+  }
+  100% {transform: scale(1, 1);
+  }
+}
+
+/* .planet-img-container {
+  animation: jelly 5s infinite;
+} */
+
 select#lang option[value="1"] { 
   background-image:url("Banque\ images/Portraits planètes/Tatooine.png");
   background-size: contain;
   background-repeat: no-repeat;
+  
+
 }
 select#lang option[value="2"] { 
   background-image:url("Banque\ images/Portraits\ planètes/Alderaan.png");
@@ -330,3 +351,4 @@ select#lang option[value="21"] {
   background-size: contain;
   background-repeat: no-repeat;
 }
+
