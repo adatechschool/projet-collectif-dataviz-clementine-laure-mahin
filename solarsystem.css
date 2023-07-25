@@ -25,7 +25,6 @@ body{
   margin: 5vw 0vw -3.5vw 5vw;
   font-family: Trebuchet MS, sans-serif;
 }
-
 .planetdex {
   width: 70%;
   height: 100%;
@@ -376,4 +375,21 @@ select#lang option[value="21"] {
     top: 0;
     width: 100%;
     z-index: 9999;
+  }
+
+  @keyframes jelly {
+    0% {transform: scale(1, 1);
+    }
+    25% {transform: scale(0.9, 1.1);
+    }
+    50% {transform: scale(1.1, 0.9);
+    }
+    75% {transform: scale(0.95, 1.05);
+    }
+    100% {transform: scale(1, 1);
+    }
+  }
+  
+  .planet-img-container .fluffy {
+    animation: jelly 5s infinite;
   }

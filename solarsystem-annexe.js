@@ -20,7 +20,7 @@ const planetlist =
             logotype2:'<img id="type2" src="Banque images/Logo éléments/Terre.png"/>',
             type2: 'TERRE',
             icone: "en attente",
-            portrait: '<img alt="Visuel de la planète" title="Visuel de la planète" src="Banque images/Portraits planètes/Alderaan.png"/>',
+            portrait: '<img alt="Visuel de la planète" title="Visuel de la planète" src="Banque images/Portraits planètes/Alderaan.png" class="fluffy"/>',
             resume: " Archive : Planète tellurique située dans les mondes du Noyau, elle orbite autour d’une étoile homonyme. Détruite par l’Etoile Noire en l’an 0."
         },
 
