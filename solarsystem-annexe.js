@@ -36,7 +36,7 @@ const planetlist =
         },
 
         {
-            numero: "009",
+            numero: "006",
             value: "6",
             nom: "Bespin",
             logotype: '<img id="type" src="Banque images/Logo éléments/Air.png"/>',
@@ -47,7 +47,7 @@ const planetlist =
         },
 
         {
-            numero: "013",
+            numero: "008",
             value: "8",
             nom: "Naboo",
             logotype: '<img id="type" src="Banque images/Logo éléments/Plante.png"/>',
@@ -60,7 +60,7 @@ const planetlist =
         },
 
         {
-            numero: "014",
+            numero: "009",
             value: "9",
             nom: "Coruscant",
             logotype: '<img id="type" src="Banque images/Logo éléments/Métal.png"/> ',
@@ -71,7 +71,7 @@ const planetlist =
         },
 
         {
-            numero: "017",
+            numero: "010",
             value: "10",
             nom: "Kamino",
             logotype: '<img id="type" src="Banque images/Logo éléments/Eau.png"/>',
@@ -82,7 +82,7 @@ const planetlist =
         },
 
         {
-            numero: "020",
+            numero: "011",
             value: "11",
             nom: "Geonosis",
             logotype: '<img id="type" src="Banque images/Logo éléments/Terre.png"/>',
@@ -93,7 +93,7 @@ const planetlist =
         },
 
         {
-            numero: "024",
+            numero: "021",
             value: "21",
             nom: "Eriadu",
             logotype: '<img id="type" src="Banque images/Logo éléments/Métal.png"/>',
@@ -104,7 +104,7 @@ const planetlist =
         },
 
         {
-            numero: "028",
+            numero: "013",
             value: "13",
             nom: "Mustafar",
             logotype: '<img id="type" src="Banque images/Logo éléments/Ténèbre.png">',
