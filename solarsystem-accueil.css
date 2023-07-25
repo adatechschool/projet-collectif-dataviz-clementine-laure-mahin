@@ -1,11 +1,3 @@
-.ancien-body {
-    display: flex;
-    justify-content: space-between;
-    gap: 20px;
-    padding: 5vw;
-    align-items: center;
-  }
-  
   body{
     display: flex;
     flex-direction:column;
@@ -16,29 +8,59 @@
     background-repeat: no-repeat;
     font-family: Trebuchet MS, sans-serif;
   }
+
+  .ancien-body {
+    display: flex;
+    justify-content: space-between;
+    padding: 5vw;
+    align-items: center;
+  }  
   
+  .onglets {
+    /* margin: 5vw 0vw -3.5vw 5vw; */
+    font-family: Trebuchet MS, sans-serif;
+    display: flex;
+    justify-content: flex-start;
+    gap:10px;
+    margin-left:10px;
+  }
+
+  #onglet-accueil{
+    background-color: #f0ebcd96;
+    border-top-left-radius:3px;
+    border-top-right-radius: 3px;
+    padding: 3px 5px 0px 5px;
+  }
+
   #onglet-planetdex{
     background-color: #f0ebcd96;
-    position: absolute;
+    border-top-left-radius:3px;
+    border-top-right-radius: 3px;
+    padding: 3px 5px 0px 5px;
   }
-  
-  .bouton-planetdex {
-    margin: 5vw 0vw -3.5vw 5vw;
-    font-family: Trebuchet MS, sans-serif;
+
+  #onglet-diamètre{
+    background-color: #f0ebcd96;
+    border-top-left-radius:3px;
+    border-top-right-radius: 3px;
+    padding: 3px 5px 0px 5px;
   }
-  
+
   .planetdex {
     width: 70%;
     height: 100%;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .titreCorpusResume{
     background-color: #f0ebcd96;
     border: 2px solid #55555500;
     border-radius: 3px;
     padding: 20px;
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
   }
-  
+
   .titre {
     width: 100%;
     height: 10%;
@@ -230,7 +252,7 @@
   
   
   .resume {
-    width: 63vw;
+    width: 100%;
     height: 5vw;
     background-color: #1515359d;
     border-radius: 10px;
@@ -250,12 +272,13 @@
   }
   
   #planetlist {
-    display : none;
     width: 20%;
     height: 60%;
     background-color: #3338389d;
     border-radius: 10px;
     float: right;
+    display: flex;
+    flex-direction: column;
     gap: 20px;
     padding: 20px;
   }
@@ -264,7 +287,7 @@
     font-family: Trebuchet MS, sans-serif;
     font-size: 16px;
     color: rgb(246, 234, 211);
-    text-align: center;
+    text-align: justify;
   }
   
   select option:checked {

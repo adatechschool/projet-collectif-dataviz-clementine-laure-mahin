@@ -1,11 +1,3 @@
-.ancien-body {
-  display: flex;
-  justify-content: space-between;
-  gap: 20px;
-  padding: 5vw;
-  align-items: center;
-}
-
 body{
   display: flex;
   flex-direction:column;
@@ -17,26 +9,59 @@ body{
   font-family: Trebuchet MS, sans-serif;
 }
 
-#onglet-planetdex{
-  background-color: #f0ebcd96;
-  position: absolute;
+.ancien-body {
+  display: flex;
+  justify-content: space-between;
+  padding: 5vw;
+  align-items: center;
 }
 
-.accueil {
-  margin: 5vw 0vw -3.5vw 5vw;
+.onglets {
+  /* margin: 5vw 0vw -3.5vw 5vw; */
   font-family: Trebuchet MS, sans-serif;
+  display: flex;
+  justify-content: flex-start;
+  gap:10px;
+  margin-left:10px;
 }
+
+#onglet-accueil{
+  background-color: #f0ebcd96;
+  border-top-left-radius:3px;
+  border-top-right-radius: 3px;
+  padding: 3px 5px 0px 5px;
+}
+
+#onglet-planetdex{
+  background-color: #f0ebcd96;
+  border-top-left-radius:3px;
+  border-top-right-radius: 3px;
+  padding: 3px 5px 0px 5px;
+}
+
+#onglet-diamètre{
+  background-color: #f0ebcd96;
+  border-top-left-radius:3px;
+  border-top-right-radius: 3px;
+  padding: 3px 5px 0px 5px;
+}
+
 .planetdex {
   width: 70%;
   height: 100%;
+  padding: 20px;
+
+  display: flex;
+  flex-direction: column;
+}
+
+.titreCorpusResume{
   background-color: #f0ebcd96;
   border: 2px solid #55555500;
   border-radius: 3px;
   padding: 20px;
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
 }
+
 
 .titre {
   width: 100%;
@@ -63,7 +88,7 @@ body{
 }
 
 .losange {
-  max-width: 90px;
+  max-width: 80px;
 }
 
 #Numero {
@@ -225,14 +250,13 @@ body{
   top: 4px;
 }
 
-
-.resume {
-  width: 63vw;
-  height: 5vw;
-  background-color: #1515359d;
-  border-radius: 10px;
-  position: relative;
-}
+  .resume {
+    width: 100%;
+    height: 5vw;
+    background-color: #1515359d;
+    border-radius: 10px;
+    position: relative;
+  }
 
 #planet-context {
   font-family: Trebuchet MS, sans-serif;
