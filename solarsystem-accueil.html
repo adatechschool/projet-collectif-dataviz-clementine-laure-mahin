@@ -15,29 +15,88 @@
         </span>
     </div>
 
-    <div class="planetdex">
-        <div class="titre">
-            Le Planètdex
-        </div>
-
-        <div class="corpus">
-            <div class="image">
-                <img src ="Banque images/Elements de décors/Millenium.png"/>
+    <div class="ancien-body">
+        <div class="planetdex">
+            <div class="titre">
+                <span id="h1">Le Planètdex</span>
             </div>
 
-            <div class="details">
-                <p id="distance">Distance parcourue : 156,35 parsec</p>
-                <p id="planètes-découvertes">Nombre de planètes découvertes : 10</p>
-                <p id="spécialités">Spécialités culinaires découvertes : 22</p>
-            </div>
-        </div>
+            <div class="corpus">
+                <div class="image">
+                    <img src="Banque images/Elements de décors/Millenium.png" />
+                </div>
 
-        <div class="resume">
-            <p id="context">Nous sommes 3 explorateurs de l’Espace, à bord de notre vaisseau spatial le Lovelace, nous avons pour mission le recensement de tous les mondes existants. Nous avons décidé de nommer notre encyclopédie : Le PlanètDex ! La Nouvelle nouvelle République Galactique nous à donné cette mission dans un but éducatif.
-                Voici le fruit de notre travail.
-                </p>
+                <div class="details">
+
+                    <span id="data-distance">
+                        <img id="logo-distance" alt="Distance parcourue" title="Distance parcourue"
+                            src="Banque images/Elements de décors/Distance.jpg" />
+                        <span>156,35 parsec</span>
+                    </span>
+
+                    <div class="planètes-découvertes-container">
+                        <img class="planètes-découvertes" src="Banque images/Elements de décors/Coup de peinture.png" />
+                        <span id="data-planètes-découvertes">Nombre de planètes : </span>
+                        <span>10</span>
+                    </div>
+
+                    <div class="spécialités-container">
+                        <img class="spécialités" src="Banque images/Elements de décors/Coup de peinture.png" />
+                        <span id="data-spécialités">Spécialités culinaires :</span>
+                        <span>22</span>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="resume">
+                <span id="context">Nous sommes 3 explorateurs de l’Espace, à bord de notre vaisseau spatial le
+                    Lovelace, nous avons pour mission le recensement de tous les mondes existants. Nous avons décidé
+                    de nommer notre encyclopédie : Le PlanètDex ! La Nouvelle nouvelle République Galactique nous à
+                    donné cette mission dans un but éducatif.
+                    Voici le fruit de notre travail.
+                    </p>
+            </div>
         </div>
     </div>
+
+    <!-- On divise notre page web en deux section : la première section permet d'afficher les données de la planète "séléctionnée" 
+    La seconde division prend la forme d'une liste et permet de naviguer dans la liste des planètes-->
+
+    <!-- Seconde section : -->
+    <div id="planetlist">
+        <!-- Ici on intégrerait la liste des planètes dans laquelle on souhaitera naviguer. Cette partie sera donc rédigée avec JS. -->
+
+        <!-- <form action="#"> -->
+        <label for="lang" id="intro-select">Dernières planètes découvertes :
+        </label>
+
+        <br>
+        <select name="planetMenu" id="lang" size="5">
+            <option value="1">Tatooine</option>
+            <option value="2">Alderaan </option>
+            <option value="60">Inconnue</option>
+            <option value="4">Hoth </option>
+            <option value="60">Inconnue</option>
+            <option value="6">Bespin </option>
+            <option value="60">Inconnue</option>
+            <option value="8">Naboo </option>
+            <option value="9">Coruscant </option>
+            <option value="10">Kamino </option>
+            <option value="11">Geonosis </option>
+            <option value="60">Inconnue</option>
+            <option value="13">Mustafar </option>
+            <option value="60">Inconnue</option>
+            <option value="60">Inconnue</option>
+            <option value="60">Inconnue</option>
+            <option value="60">Inconnue</option>
+            <option value="60">Inconnue</option>
+            <option value="60">Inconnue</option>
+            <option value="60">Inconnue</option>
+            <option value="21">Eriadu </option>
+        </select>
+
+
 
     </div>
 

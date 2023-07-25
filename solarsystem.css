@@ -14,6 +14,7 @@ body{
   background-image: url("Banque images/Elements\ de\ décors/Back-ground Body.jpeg");
   background-size: 100%;
   background-repeat: no-repeat;
+  font-family: Trebuchet MS, sans-serif;
 }
 
 #onglet-planetdex{
@@ -43,7 +44,7 @@ body{
   background-image: url("Banque\ images/Elements de décors/Coup de peinture.png");
   background-size: 100%;
   background-repeat: no-repeat;
-  padding: 5px;
+  padding: 10px 10px 10px 10px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -235,7 +236,7 @@ body{
 
 #planet-context {
   font-family: Trebuchet MS, sans-serif;
-  font-size: 1.2vw;
+  font-size: 1vw;
   color: rgb(246, 234, 211);
   position: absolute;
   padding : 4px 10px 15px 10px;
