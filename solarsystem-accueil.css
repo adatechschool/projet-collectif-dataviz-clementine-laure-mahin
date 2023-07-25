@@ -9,9 +9,9 @@ body {
     background-image: url("Banque images/Elements\ de\ décors/Back-ground Body.jpeg");
     background-size: 100%;
     background-repeat: no-repeat;
-  }
-  
-  .planetdex {
+}
+
+.planetdex {
     width: 70%;
     height: 100%;
     background-color: #f0ebcd96;
@@ -21,47 +21,49 @@ body {
     display: flex;
     flex-direction: column;
     gap: 20px;
-  }
-  
-  .titre {
+}
+
+.titre {
     width: 100%;
-    height: 10%;
+    height: auto;
     background-image: url("Banque\ images/Elements de décors/Coup de peinture.png");
     background-size: 100%;
     background-repeat: no-repeat;
-    padding: 5px;
+    padding: 15px 0px 15px 0px;
+    display: flex;
+    align-items: center;
+    line-height: 20px;
+    font-family: Trebuchet MS, sans-serif;
+    font-size: 14px;
+    padding-top: 5px;
+    color: rgb(246, 234, 211);
+}
+
+.corpus {
+    width: 100%;
+    height: 80%;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    line-height: 20px;
-  }
-  
-  .corpus {
-    width: 100%;
-    height: 80%;
-    /* gap:20px; */
-    display: flex;
-    align-items: center;
     gap: 20px;
-  }
-  
-  
-  .image {
+}
+
+
+.image {
     width: auto;
     height: 20vw;
     border-radius: 10px;
-    /* padding: 20px;  */
     display: flex;
-    justify-content: center;
-  }
-  
-  .image img {
+    align-items: center;
+}
+
+.image img {
     width: auto;
     /* Remplir toute la largeur de la div */
     height: 70%;
     /* Remplir toute la hauteur de la div */
     /* object-fit: cover; */
-    /* Conserver les proportions et remplir la div */;
+    /* Conserver les proportions et remplir la div */
   }
   
   .details {
@@ -77,23 +79,22 @@ body {
     font-family: Trebuchet MS, sans-serif;
     font-size: 1.5vw;
     color: rgb(35, 35, 88)
-  }
-  
-  .resume {
+}
+
+.resume {
     width: 63vw;
-    height: 4.2rem;
+    height: 5vw;
     background-color: #1515359d;
     border-radius: 10px;
     position: relative;
-  }
-  
-  #planet-context {
+}
+
+#context {
     font-family: Trebuchet MS, sans-serif;
-    font-size: 1.2vw;
+    font-size: 1vw;
     color: rgb(246, 234, 211);
     position: absolute;
     left: 10px;
-    right:10px;
-    top: 10px;
+    right: 10px;
     text-align: justify;
-  }
+}
