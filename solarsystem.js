@@ -79,6 +79,7 @@ function showLoader(){
   const loader = document.querySelector('.loaderbb8');
   loader.style.display = 'block';
 }
+
 function hideLoader(){
   const loader = document.querySelector('.loaderbb8');
   loader.style.display = 'none';

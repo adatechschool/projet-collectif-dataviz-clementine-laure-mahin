@@ -265,8 +265,8 @@ select option:checked {
 }
 
 select {
-  padding: 10px 10px 10px 10px;
-  font-size: 2vw;
+  padding:10px 10px 10px 10px;
+  font-size: 1.6vw;
   line-height: 1.3;
   letter-spacing: 0.079em;
   font-weight: 400;
@@ -358,7 +358,7 @@ select#lang option[value="21"] {
 .loaderbb8 
   {
     display : none;
-    background: url('Banque images/Elements de décors/bb8.gif') 43% 50% no-repeat rgba(91, 90, 90, 0.338);
+    background: url('Banque images/Elements de décors/bb8.gif') 44% 50% no-repeat rgba(91, 90, 90, 0.338);
     background-size : 200px;
     cursor: wait;
     height: 100%;
