@@ -25,9 +25,30 @@ function fetchPlanetInfo(numero) {
     .then(response => response.json())
     .then(function (planet) {
       console.log(planet);
-      document.getElementById('planet-climate').textContent = planet.climate ;
-      document.getElementById('planet-diameter').textContent = spaceInt(planet.diameter )+ " km";
-      document.getElementById('planet-population').textContent = spaceInt(planet.population);
+
+      if(planet.climate == "temperate"){
+        document.getElementById('planet-climate').textContent = "Tempéré";
+      }else if(planet.climate == "hot"){
+        document.getElementById('planet-climate').textContent = "Chaud";
+      }else if(planet.climate == "arid"){
+        document.getElementById('planet-climate').textContent = "Aride";
+      }else if(planet.climate == "polluted"){
+        document.getElementById('planet-climate').textContent = "Pollué";
+      }else if(planet.climate == "frozen"){
+        document.getElementById('planet-climate').textContent = "Glacé";
+      }else if (planet.climate == "temperate, arid"){
+        document.getElementById('planet-climate').textContent = "Tempéré, Aride";
+      }else{document.getElementById('planet-climate').textContent = "???"}
+      
+
+      if(planet.diameter!="unknown"){
+        document.getElementById('planet-diameter').textContent = spaceInt(planet.diameter )+ " km";
+      }else{document.getElementById('planet-diameter').textContent = "???";}
+
+      if(planet.population!="unknown"){
+        document.getElementById('planet-population').textContent = spaceInt(planet.population);
+      }else{document.getElementById('planet-population').textContent = "???";}
+      
 
       let selectedPlanet = planetlist.find(planet => planet.value === numero);
       if (selectedPlanet) {
