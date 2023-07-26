@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="UTF-8" />
-    <link rel="stylesheet" type="text/css" href="solarsystem-accueil.css">
+    <link rel="stylesheet" type="text/css" href="solarsystem-diamètre.css">
     <title>Interface d'accueil</title>
 </head>
 
@@ -22,7 +22,7 @@
                 <span id="onglet-planetdex">
                     <a href="solarsystem-index.html">Planètdex</a>
                 </span>
-                
+
                 <span id="onglet-diamètre">
                     <a href="solarsystem-diamètre.html">Diamètre</a>
                 </span>
@@ -30,45 +30,34 @@
 
             <div class="titreCorpusResume">
                 <div class="titre-container">
-                    <span id="titre">Le Planètdex</span>
+                    <span id="titre">Quelle est la plus grande ?</span>
                 </div>
 
                 <div class="corpus">
-                    <div class="image">
-                        <img src="Banque images/Elements de décors/Millenium.png" />
+                    <div class="bouton">
+                        <button onclick="comparePlanetDiameter()">Comparaison</button>
                     </div>
 
                     <div class="details">
 
                         <span id="data-distance">
-                            <img id="logo-distance" alt="Distance parcourue" title="Distance parcourue"
-                                src="Banque images/Elements de décors/Distance.jpg" />
-                            <span>156,35 parsec</span>
+
+                            <span></span>
                         </span>
 
                         <div class="planètes-découvertes-container">
-                            <img class="planètes-découvertes"
-                                src="Banque images/Elements de décors/Coup de peinture.png" />
-                            <span id="data-planètes-découvertes">Nombre de planètes : </span>
-                            <span>10</span>
+
                         </div>
 
                         <div class="spécialités-container">
-                            <img class="spécialités" src="Banque images/Elements de décors/Coup de peinture.png" />
-                            <span id="data-spécialités">Spécialités culinaires :</span>
-                            <span>22</span>
+
                         </div>
 
                     </div>
                 </div>
 
                 <div class="resume">
-                    <span id="context">Nous sommes 3 explorateurs de l’Espace, à bord de notre vaisseau spatial le
-                        Lovelace, nous avons pour mission le recensement de tous les mondes existants. Nous avons décidé
-                        de nommer notre encyclopédie : Le PlanètDex ! La Nouvelle nouvelle République Galactique nous à
-                        donné cette mission dans un but éducatif.
-                        Voici le fruit de notre travail.
-                        </p>
+                    <span id="context">à rédiger</span>
                 </div>
             </div>
         </div>
@@ -117,5 +106,7 @@
 
 
 </body>
+
+<script src="solarsystem-diamètre.js"></script>
 
 </html>
