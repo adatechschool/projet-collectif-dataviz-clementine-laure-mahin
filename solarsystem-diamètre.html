@@ -3,8 +3,8 @@
 
 <head>
     <meta charset="UTF-8" />
-    <link rel="stylesheet" type="text/css" href="solarsystem-diamètre.css">
-    <title>Interface d'accueil</title>
+    <link rel="stylesheet" type="text/css" href="solarsystem.css">
+    <title>Comparaison des diamètres</title>
 </head>
 
 <body>
@@ -28,85 +28,79 @@
                 </span>
             </div>
 
+
             <div class="titreCorpusResume">
                 <div class="titre-container">
-                    <span id="titre">Quelle est la plus grande ?</span>
+                    <div class="titre">
+                        <div class="partie-gauche">
+                            <div class="losange-container">
+                                <img class="losange" src="Banque images/Elements de décors/Losange.png" />
+                                <span id="Numero">N° ???</span>
+                            </div>
+                            <span id="planet-name"></span>
+                        </div>
+
+                        <div class="partie-droite">
+                            <span id="logo-type"><img id="type" src="Banque images/Logo éléments/Inconnu.png" /></span>
+                            <span id="planet-type"> ??? </span>
+                            <span id="logo-type2"></span>
+                            <span id="planet-type2"></span>
+                        </div>
+                    </div>
                 </div>
 
                 <div class="corpus">
-                    <div class="bouton">
-                        <button onclick="comparePlanetDiameter()">Comparaison</button>
+
+                    <div class="image">
+                        <div id="planet-portrait" class="planet-img-container">
+                            <span id="planet-portrait">
+                                <img class="planet-img" alt="Visuel de la planète" title="Visuel de la planète"
+                                    src="Banque images/Portraits planètes/unknown.png">
+                            </span>
+                        </div>
                     </div>
 
                     <div class="details">
+                        <div class="diametre">
+                            <span id="data-diametre">
 
-                        <span id="data-distance">
-
-                            <span></span>
-                        </span>
-
-                        <div class="planètes-découvertes-container">
-
+                            </span>
+                            <span id="planet-diameter"> ??? </span><br>
                         </div>
-
-                        <div class="spécialités-container">
-
-                        </div>
-
                     </div>
                 </div>
 
                 <div class="resume">
-                    <span id="context">à rédiger</span>
+                    <span id="context">Vous pouvez consulter ici le diamètre de la planète que vous sélectionnez à
+                        droite, afin de les comparer.</span>
                 </div>
             </div>
         </div>
 
+
+
         <div id="planetlist">
-            <!-- Ici on intégrerait la liste des planètes dans laquelle on souhaitera naviguer. Cette partie sera donc rédigée avec JS. -->
 
-            <!-- <form action="#"> -->
-            <label for="lang" id="intro-select">Dernières planètes découvertes :
-            </label>
+            <span id="intro-select">Liste des planètes découvertes classées dans l'ordre croissant :
+            </span>
 
-            <br>
+            <span id="bouton">
+                <!-- <button onclick="comparePlanetDiameter()">Comparaison</button> -->
+            </span>
+            
             <select name="planetMenu" id="lang" size="5">
-                <option value="1">Tatooine</option>
-                <option value="2">Alderaan </option>
-                <option value="60">Inconnue</option>
-                <option value="4">Hoth </option>
-                <option value="60">Inconnue</option>
-                <option value="6">Bespin </option>
-                <option value="60">Inconnue</option>
-                <option value="8">Naboo </option>
-                <option value="9">Coruscant </option>
-                <option value="10">Kamino </option>
-                <option value="11">Geonosis </option>
-                <option value="60">Inconnue</option>
-                <option value="13">Mustafar </option>
-                <option value="60">Inconnue</option>
-                <option value="60">Inconnue</option>
-                <option value="60">Inconnue</option>
-                <option value="60">Inconnue</option>
-                <option value="60">Inconnue</option>
-                <option value="60">Inconnue</option>
-                <option value="60">Inconnue</option>
-                <option value="21">Eriadu </option>
             </select>
-
-
-
         </div>
-    </div>
 
-    <!-- On divise notre page web en deux section : la première section permet d'afficher les données de la planète "séléctionnée" 
+        <!-- On divise notre page web en deux section : la première section permet d'afficher les données de la planète "séléctionnée" 
     La seconde division prend la forme d'une liste et permet de naviguer dans la liste des planètes-->
 
-    <!-- Seconde section : -->
+        <!-- Seconde section : -->
 
 
 </body>
 
+<script src="solarsystem-annexe.js"></script>
 <script src="solarsystem-diamètre.js"></script>
 
 </html>

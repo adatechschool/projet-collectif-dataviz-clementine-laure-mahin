@@ -84,8 +84,8 @@ body{
   display: flex;
   justify-content: flex-end;
   margin-left: 20px;
-  margin-top: 2px;
-  margin-bottom: -2PX;
+  margin-top: 3px;
+  margin-bottom: -4PX;
   position: relative;
 }
 
@@ -121,7 +121,7 @@ body{
   align-content: flex-end;
   gap: 10px;
   padding: 5px;
-  margin-right: 20px;
+  margin-right: 40px;
   background-color: rgba(2, 2, 57, 0.763);
   border-radius: 10px;
   position: relative;
@@ -265,6 +265,15 @@ body{
     position: relative;
   }
 
+#context {
+    font-family: Trebuchet MS, sans-serif;
+    font-size: 1vw;
+    color: rgb(246, 234, 211);
+    position: absolute;
+    padding : 4px 10px 15px 10px;
+    text-align: justify;
+  }
+
 #planet-context {
   font-family: Trebuchet MS, sans-serif;
   font-size: 1vw;
@@ -327,6 +336,66 @@ select {
   }
   100% {transform: scale(1, 1);
   }
+}
+
+select#lang option[value="Tatooine"] { 
+  background-image:url("Banque\ images/Portraits planètes/Tatooine.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  
+
+}
+select#lang option[value="Alderaan"] { 
+  background-image:url("Banque\ images/Portraits\ planètes/Alderaan.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+ }
+select#lang option[value="Hoth"] { 
+  background-image:url("Banque\ images/Portraits\ planètes/Hoth.png"); 
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+select#lang option[value="Bespin"] { 
+  background-image:url("Banque\ images/Portraits\ planètes/Bespin.png"); 
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+select#lang option[value="Naboo"] { 
+  background-image:url("Banque\ images/Portraits\ planètes/Naboo.png"); 
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+select#lang option[value="Coruscant"] { 
+  background-image:url("Banque\ images/Portraits\ planètes/Coruscant.png"); 
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+select#lang option[value="Kamino"] { 
+  background-image:url("Banque\ images/Portraits\ planètes/Kamino.png"); 
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+select#lang option[value="Geonosis"] { 
+  background-image:url("Banque\ images/Portraits\ planètes/Geonosis.png"); 
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+select#lang option[value="Mustafar"] { 
+  background-image:url("Banque\ images/Portraits\ planètes/Mustafar.png"); 
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+select#lang option[value="Eriadu"] { 
+  background-image:url("Banque\ images/Portraits\ planètes/Eriadu.png"); 
+  background-size: contain;
+  background-repeat: no-repeat;
 }
 
 select#lang option[value="1"] { 
