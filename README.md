@@ -1,12 +1,12 @@
 # Projet collectif Dataviz  
-## Clementine  
+## Clémentine  
 ## Laure  
 ## Mahin  
 -----------------------------------------------------------------
 
 ## Objectif du projet :  
 
-Développer une application web permet de visualiser des données de façon dynamique.  
+Développer une application web permettant de visualiser des données de façon dynamique.  
 
 ## Conditions :  
 
