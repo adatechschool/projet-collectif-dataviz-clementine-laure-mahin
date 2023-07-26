@@ -1,6 +1,7 @@
 let array = []
 
-function fetchPlanetInfo(url) {
+function callingPlanets(url) {
+    showLoader()
     return fetch(url)
         .then(response => response.json())
         .then(function (planets) {
@@ -8,7 +9,10 @@ function fetchPlanetInfo(url) {
             let next = planets.next;
             if (next) {
                 console.log("calling api " + next)
-                fetchPlanetInfo(next);
+                callingPlanets(next);
+            }
+            else{
+                hideLoader()
             }
         })
         .catch(function (error) {
@@ -36,35 +40,97 @@ function supprDataTab(tab) {
     return newArray
 }
 
-fetchPlanetInfo(`https://swapi.dev/api/planets/`)
+callingPlanets(`https://swapi.dev/api/planets/`)
+   
 
 
 // je veux créer une fonction qui appelle supprDataTab(array) et qui sera lancé dans un bouton. La fonction devra récupéré le tableau à la sortie de supprDataTab
 //et retourner un tableau ordonné des diameter
 
-
+canCompare = true;
 
 function comparePlanetDiameter() {
-    let tab = supprDataTab(array);
-    for (let i = 0; i < tab.length - 1; i++) {
-        let minIndex = i;
-        for (let j = i + 1; j < tab.length; j++) {
-            if (parseInt(tab[j].diameter) < parseInt(tab[minIndex].diameter)) {
-                minIndex = j;
+    if (canCompare) {
+        let tab = supprDataTab(array);
+        for (let i = 0; i < tab.length - 1; i++) {
+            let minIndex = i;
+            for (let j = i + 1; j < tab.length; j++) {
+                if (parseInt(tab[j].diameter) < parseInt(tab[minIndex].diameter)) {
+                    minIndex = j;
+                }
+            }
+            if (minIndex !== i) {
+                let temp = tab[i];
+                tab[i] = tab[minIndex];
+                tab[minIndex] = temp;
             }
         }
-        if (minIndex !== i) {
-            let temp = tab[i];
-            tab[i] = tab[minIndex];
-            tab[minIndex] = temp;
+        console.log(tab)
+        for (i of tab) {
+            document.getElementById("lang").innerHTML += "<option value='" + i.name + "'>" + i.name + "</option>"
         }
+        canCompare = false;
     }
-    console.log(tab)
-    return tab;
 }
 
+function showLoader(){
+    console.log("loaderbb8")
+    const loader = document.querySelector('.loaderbb8');
+    loader.style.display = 'block';
+  }
+  
+  function hideLoader(){
+    const loader = document.querySelector('.loaderbb8');
+    loader.style.display = 'none';
+    console.log("hiddenloaderbb8")
+  }
+  
+  function spaceInt(number){
+  return new Intl.NumberFormat().format(number)
+  }
 
 
+//   function fetchPlanetInfo(name) {
+//     console.log(name)
+//     showLoader()
+//     return fetch(`https://swapi.dev/api/planets/${numero}`)
+//       .then(response => response.json())
+//       .then(function (planet) {
+//         console.log(planet);
+  
+//         if(planet.diameter!="unknown"){
+//           document.getElementById('planet-diameter').textContent = spaceInt(planet.diameter )+ " km";
+//         }else{document.getElementById('planet-diameter').textContent = "???";}
+ 
+//         let selectedPlanet = planetlist.find(planet => planet.nom === name);
+//         if (selectedPlanet) {
+//           document.getElementById('Numero').innerHTML = "N°" + selectedPlanet.numero;
+//           document.getElementById('planet-name').innerHTML = selectedPlanet.nom;
+//           document.getElementById('planet-portrait').innerHTML = selectedPlanet.portrait;
+//           document.getElementById('planet-type').innerHTML = selectedPlanet.type
+//           document.getElementById('logo-type').innerHTML = selectedPlanet.logotype
+//           if(selectedPlanet.type2 !== undefined){
+//             document.getElementById('planet-type2').innerHTML = selectedPlanet.type2
+//             document.getElementById('logo-type2').innerHTML = selectedPlanet.logotype2
+//           }else{
+//             document.getElementById('planet-type2').innerHTML = ""
+//             document.getElementById('logo-type2').innerHTML = ""
+//           }
+//         }
+//         hideLoader()
+//       })
+//       .catch(function (error) {
+//         console.error(error);
+//       });
+//   };
 
+//   document.getElementById("lang").addEventListener("change", function (event) {
+//     event.preventDefault();
+  
+//     let planeteSelectionnee = document.getElementById("lang").value;
+  
+//     fetchPlanetInfo(planeteSelectionnee)
+  
+//   });
 
-
+// PARTIE A CORRIGER : le pb de la liste générée par la première fonction c'est qu'elle donne en valeur de nom et non des numéros comme attendu par fetchPlanetInfo
